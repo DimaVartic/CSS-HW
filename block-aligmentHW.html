@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>BLOCK ALIGMENT HW</title>
+
+    <style>
+        .header, .content, .footer {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .article-main,
+        .article-second,
+        .article-third {
+            border: 5px dashed gray;
+            box-sizing: border-box;
+            
+        } 
+
+        html {
+            height: 100%;
+        }
+       
+        body {
+            height: 100%;
+        }
+
+        .content{
+            height: 100%;
+        }
+
+        .article-main{
+            height: 60%;
+            width: 100%;
+            float: inline-start;
+        }
+
+        .article-second,
+        .article-third {
+            height: 30%;
+            width: 45%;  
+            float: left;  
+            margin-top: 6.2vh;
+        }
+        .article-second{
+            margin-right: 10%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+ 
+    
+    <header class="header">
+        HEADER
+    </header>
+
+    <section class="content">
+        <main class="article-main">
+            MAIN EVENT 1
+        </main>
+
+        <article class="article-second">
+            OLD 
+            EVENT 1
+        </article>
+
+        <article class="article-third">
+            OLD
+            EVENT 2
+        </article>
+    </section>
+
+    <footer class="footer">
+        FOOTER
+
+    </footer>
+
+
+</body>
+</html>
