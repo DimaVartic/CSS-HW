@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Street Block | CSS</title>
+    <style>
+        body{
+            background-color: #223;
+            color: white;
+        }
+        .street{
+            /*border: 1px dotted red;*/
+        }
+
+        .house{
+            /*border: 1px dotted green;*/
+            width: 150px;
+        }
+
+        .house-roof{
+            width: 0x;
+            height: 0px;
+            /*triangle*/
+            border: 75px solid brown;
+            border-top-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-width: 90px;
+        }
+
+        .house-wall {
+            background-color: antiquewhite;
+            width: 150px;
+            height: 150px;
+    
+        }
+        .house-window{
+            border: 5px solid brown;
+            width: 50px;
+            height: 50px;
+
+            transform: translateX(45px) translateY(45px);
+        }
+
+        .house-window-glass1{
+            background-color: white;
+            width: 23px;
+            height: 24px;
+            border: 2px solid black;
+            border-top-width: 0px;
+            border-left-width: 0px;
+            margin-right: -4px;
+            display: inline-block;
+        }
+
+        .house-window-glass2{
+            background-color: white;
+            width: 25px;
+            height: 24px;
+            border: 2px solid black;
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-left-width: 0px;
+            display: inline-block;
+
+        }
+
+
+        .house-window-glass3{
+            background-color: white;
+            width: 23px;
+            height: 24px;
+            border: 2px solid black;
+            border-top-width: 0px;
+            border-left-width: 0px;
+            border-bottom: 0px;
+            margin-top: -4px;
+            margin-right: -4px;
+            display: inline-block;
+        }
+        .house-window-glass4{
+            background-color: white;
+            width: 25px;
+            height: 24px;
+            margin-top: -4px;
+            display: inline-block;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="street">
+        <div class="house">
+            <div class="house-roof"></div>
+            <div class="house-wall">
+                <div class="house-window">
+                    <!--
+                        HW1:
+                            split the window
+                    -->
+                    <div class="house-window-glass1"></div>
+                    <div class="house-window-glass2"></div>
+                    <div class="house-window-glass3"></div>
+                    <div class="house-window-glass4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
