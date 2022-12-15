@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pure CSS PRELOADER HW3</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+        }
+       
+
+        .preloader{
+            margin-top: 100px;
+        }
+
+        .preloader div{
+            color: white;
+            margin: 1.5px;
+            float: left;
+        }
+
+        .preloader div:nth-child(8) {
+            color: transparent;
+            animation: dots 3s infinite;
+            animation-delay: 0.2;
+        }
+
+        .preloader div:nth-child(9) {
+            color: transparent;
+            animation: dots 3s infinite;
+            animation-delay: 0.4s;
+        }
+
+        .preloader div:nth-child(10) {
+            color: transparent;
+            animation: dots 3s infinite;
+            animation-delay: 0.6s;
+        }
+
+        @keyframes dots {
+            fom {
+                color: transparent;
+                opacity: 0.0;
+            }
+            to {
+                color: white;
+                opacity: 1;
+            }
+        }
+        /*
+            Am vrut sa fac ca animatia sa mearga si inapoi, sa dispara pe rand.
+            Adica primul punct sa se tine mai mult,ultimul punc sa dispara primul
+            dar repetarile sa fie egale la toate.
+            Asa si nu am inteles cum sa fac asta :D
+        */
+
+  
+
+    </style>
+</head>
+<body>
+    <h1>Pure CSS PRELOADER</h1>
+    
+    <div class="preloader"> 
+        <div>L</div>
+        <div>o</div>
+        <div>a</div>
+        <div>d</div>
+        <div>i</div>
+        <div>n</div>
+        <div>g</div>
+        <div>.</div>
+        <div>.</div>
+        <div>.</div>
+    </div>
+
+</body>
+</html>
