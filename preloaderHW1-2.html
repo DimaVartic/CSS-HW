@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pure CSS PRELOADER HW 1-2</title>
+    <!--HW1. preloader height?
+            .preloader div height?
+    - div singur ca tag nu are inaltime. Inaltimea lui depinde de inaltimea textului
+     + pixelii care bowser-ul le adauga intre text(sau alte elemente) ca sa nu fie lipit.-->
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+        }
+
+        .preloader{
+            margin-top: 100px;
+        }
+
+        .preloader div{
+            width: 20px;
+            height: 20px;
+            background-color:white;
+            margin: 5px;
+            color: transparent;
+            opacity: 0.5;
+        }
+
+        .preloader div:first-child{
+            animation: move-horizontal 1s 10 alternate;
+    
+        }
+        .preloader div:nth-child(2) {
+            animation: move-horizontal 1s 10 alternate;
+            animation-delay: 0.2s;
+
+        }
+
+        .preloader div:nth-child(3) {
+            animation: move-horizontal 1s 10 alternate;
+            animation-delay: 0.4s;
+
+        }
+
+        .preloader div:nth-child(4) {
+            animation: move-horizontal 1s 10 alternate;
+            animation-delay: 0.6s;
+
+        }
+
+        .preloader div:nth-child(5) {
+            animation: move-horizontal 1s 10 alternate;
+            animation-delay: 0.6s;
+
+        }
+
+        @keyframes move-horizontal {
+            fom {
+                transform: translateX(0);
+                background-color: white;
+                border-radius: 0;
+                opacity: 0.5;
+            }
+            to {
+                transform: translateX(+50px);
+                background-color:#8B0000;
+                border-radius: 20px;
+                opacity: 1;
+            }
+        }
+ 
+
+    </style>
+</head>
+<body>
+    <h1>Pure CSS PRELOADER</h1>
+  
+    <div class="preloader">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+</body>
+</html>
