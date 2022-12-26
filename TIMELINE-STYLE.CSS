@@ -1,0 +1,112 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #234;
+    color: white;
+    margin: 0;
+    height: 100%;
+}
+
+.timeline {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.timeline h1,
+.timeline h2,
+.timeline h3,
+.timeline p {
+    margin: 0;
+}
+
+.timeline ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 5px solid orange;
+    margin-left: 50%;
+    height: 100%;
+}
+.timeline h1 {
+    text-align: center;
+    padding: 5%;
+}
+.timeline h2{
+    color: orangered;
+}
+
+.timeline li {
+    opacity: 0.75;
+}
+
+#event:hover #calendar {
+    opacity: 1;
+}
+
+
+.timeline li:hover,
+.calendar:hover{
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;  
+}
+
+.calendar{
+    opacity: 0;
+}
+
+#calendar {
+    opacity: 0;
+}
+
+
+.timeline li:nth-child(odd){
+    /*visibility: hidden;*/
+    text-align: right;
+    transform: translateX(-109%);
+}
+
+.timeline li:nth-child(even){
+    /*border: 1px solid white;*/
+    padding-left: 5%;
+}
+
+.timeline li:nth-child(even)::before{
+    content: "◉";
+    color: orangered;
+    font-size: 200%;
+    transform: translateX(-235%) translateY(84%);
+    display: inline-block;
+    background-color: #234;
+}
+
+.timeline li:nth-child(even) h3,
+.timeline li:nth-child(even) p {
+    padding-left: 7%;
+}
+/*
+HM1: add circle (deco) to odd li's 
+     using : : after
+*/
+.timeline li:nth-child(odd) h3,
+.timeline li:nth-child(odd) p {
+    padding-right: 7%;
+}
+
+.timeline li:nth-child(odd)::after{
+    content:"◈";
+    color: orangered;
+    font-size: 245%;
+    transform: translateX(305%) translateY(-240%); 
+    display: inline-block;
+    background-color: #234;
+}
+
+
+/*
+    HW2
+        -hide the DATE from the screen
+        and show it only on the HOVERED Li
+*/
